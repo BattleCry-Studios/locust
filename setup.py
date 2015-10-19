@@ -32,9 +32,8 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.4",
         "Intended Audience :: Developers",
         "Intended Audience :: System Administrators",
     ],
@@ -46,7 +45,11 @@ setup(
     packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
     include_package_data=True,
     zip_safe=False,
-    install_requires=["gevent==1.1b6", "flask>=0.10.1", "requests>=2.4.1", "msgpack-python>=0.4.2"],
+    install_requires=[
+        "gevent==1.1b6",
+        "flask==0.10.1",
+        "requests==2.8.1",
+        "pyzmq==14.7.0"],
     tests_require=['unittest2', 'pyzmq'],
     entry_points={
         'console_scripts': [

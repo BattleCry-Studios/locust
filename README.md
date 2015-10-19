@@ -1,8 +1,6 @@
 # Locust
 
-[![Build Status](https://secure.travis-ci.org/locustio/locust.png)](http://travis-ci.org/locustio/locust) 
-[![Gitter Chat](https://badges.gitter.im/locustio/locust.png)](https://gitter.im/locustio/locust) 
-
+This version has been modified to work with Python 3.4+, there are some Python 3 related differences compared to the main line.
 ## Links
 
 * Website: <a href="http://locust.io">locust.io</a>
@@ -61,5 +59,5 @@ Open source licensed under the MIT license (see _LICENSE_ file for details).
 
 ## Supported Python Versions
 
-Locust requires **Python 2.6+**.  It is not currently compatible with Python 3.x.
+Locust requires **Python 3.4+**.  It is not currently compatible with Python 2.x.
 
