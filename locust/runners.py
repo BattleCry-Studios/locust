@@ -41,8 +41,6 @@ class LocustRunner(object):
         # register listener that resets stats when hatching is complete
         def on_hatch_complete(user_count):
             self.state = STATE_RUNNING
-            logger.info("Resetting stats\n")
-            self.stats.reset_all()
         events.hatch_complete += on_hatch_complete
 
     @property
