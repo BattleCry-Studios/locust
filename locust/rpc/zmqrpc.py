@@ -4,7 +4,7 @@ from .protocol import Message
 class BaseSocket(object):
 
     def send(self, msg):
-        self.sender.send(msg.serialize())
+        self.sender.send(msg.serialize().encode())
     
     def recv(self):
         data = self.receiver.recv()

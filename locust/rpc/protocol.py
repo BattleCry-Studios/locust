@@ -12,5 +12,7 @@ class Message(object):
     
     @classmethod
     def unserialize(cls, data):
+        if isinstance(data, bytes):
+            data = data.decode()
         msg = cls(*json.loads(data))
         return msg
