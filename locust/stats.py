@@ -296,13 +296,17 @@ class StatsEntry(object):
             "max_response_time",
             "min_response_time",
             "total_content_length",
-            "num_reqs_per_sec",
         ]:
             setattr(obj, key, data[key])
 
         obj.response_times = {}
         for k, v in data["response_times"].items():
             obj.response_times[int(k)] = v
+
+        obj.num_reqs_per_sec = {}
+        for k, v in data["num_reqs_per_sec"].items():
+            obj.num_reqs_per_sec[int(k)] = v
+
         return obj
     
     def get_stripped_report(self):
